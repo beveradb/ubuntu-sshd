@@ -1,9 +1,9 @@
 FROM       ubuntu:16.04
-MAINTAINER Aleksandar Diklic "https://github.com/rastasheep"
+MAINTAINER Andrew Beveridge "https://github.com/beveradb"
 
 RUN apt-get update
 
-RUN apt-get install -y openssh-server
+RUN apt-get install -y openssh-server git wget vim php sshpass
 RUN mkdir /var/run/sshd
 
 RUN echo 'root:root' |chpasswd
